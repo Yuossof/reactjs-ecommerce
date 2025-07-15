@@ -35,7 +35,7 @@ export default function Register() {
         }
       })
       .catch((err) => {
-        toast.error('Please try again');
+        // toast.error('Please try again');
         setIsLoading(false);
         setErr(err.response.data.message);
       });

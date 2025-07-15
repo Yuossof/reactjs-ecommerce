@@ -46,7 +46,7 @@ export default function CartContextProvider(props) {
       {
         loading: 'Adding product...',
         success: 'Product added successfully!',
-        error: 'Error adding product',
+        error: !userToken ? 'Please login to add items to your cart' : 'Error adding product',
       }
     );
   }

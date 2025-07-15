@@ -33,7 +33,7 @@ export default function WishlistContextProvider(props) {
       {
         loading: 'Adding product to wishlist...',
         success: 'Product added successfully!',
-        error: 'Error adding product',
+        error: !userToken ? 'Please login to add items to wishlist' : 'Error adding product',
       }
     );
   }

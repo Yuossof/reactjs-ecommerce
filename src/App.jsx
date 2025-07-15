@@ -13,7 +13,6 @@ import CartContextProvider from './context/Cart/Cart';
 import WishlistContextProvider from './context/Wishlist/Wishlist';
 import { Toaster } from 'react-hot-toast';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ResetPassword from './pages/ResetPassword/ResetPassword';
 import VerifyCode from './pages/VerifyCode/VerifyCode';
@@ -36,9 +35,9 @@ function App() {
         {
           index: true,
           element: (
-            <ProtectedRoute>
+            // <ProtectedRoute>
               <Home />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
@@ -69,9 +68,9 @@ function App() {
         {
           path: 'product/:id',
           element: (
-            <ProtectedRoute>
+            // <ProtectedRoute>
               <ProductDetails />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
@@ -85,41 +84,41 @@ function App() {
         {
           path: 'cart',
           element: (
-            <ProtectedRoute>
+            // <ProtectedRoute>
               <Cart />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
           path: 'wishlist',
           element: (
-            <ProtectedRoute>
+            // <ProtectedRoute>
               <Wishlist />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
           path: 'brands',
           element: (
-            <ProtectedRoute>
+            // <ProtectedRoute>
               <Brands />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
           path: 'categories',
           element: (
-            <ProtectedRoute>
+            // <ProtectedRoute>
               <Categories />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         {
           path: 'search',
           element: (
-            <ProtectedRoute>
+            // <ProtectedRoute>
               <Search />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           ),
         },
         { path: '*', element: <NotFound /> },
